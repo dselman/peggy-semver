@@ -1,0 +1,21 @@
+{
+  "name": "peggy-semver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "peggy parser.pegjs",
+    "parse": "peggy parser.pegjs --allowed-start-rules pre_release_identifier --trace --test-file parse.txt",
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "peggy": "^2.0.1",
+    "semver": "^7.3.7"
+  },
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
+}
